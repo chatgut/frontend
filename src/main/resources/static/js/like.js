@@ -6,8 +6,8 @@ export function toogleLike(message_id) {
     fetch(likesURL + 'toggleLike/'+ message_id, {
         method: 'PUT',
         headers: {
-            'userID': userID,
-            'Authorization': 'Bearer ' +  localStorage.getItem('Token')
+        //    'userID': userID,
+        //    'Authorization': 'Bearer ' +  localStorage.getItem('Token')
         }
     }).then(response => {
         console.log("Liked");
@@ -19,8 +19,8 @@ export function checkIfLiked(visual_element, message_id) {
     fetch(likesURL + 'amount/' + message_id, {
         method: 'GET',
         headers: {
-            'userID': userID,
-            'Authorization': 'Bearer ' +  localStorage.getItem('Token')
+        //    'userID': userID,
+        //    'Authorization': 'Bearer ' +  localStorage.getItem('Token')
         }
     }).then(response =>
         response.text()

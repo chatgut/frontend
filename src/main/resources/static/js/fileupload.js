@@ -52,7 +52,7 @@ const upload = async (file) => {
     return fetch(imagesURL, { // Your POST endpoint
         method: 'POST',
         headers: {
-            'Authorization': 'Bearer ' +  localStorage.getItem('Token')
+        //    'Authorization': 'Bearer ' +  localStorage.getItem('Token')
         },
         body: formData
     }).then(

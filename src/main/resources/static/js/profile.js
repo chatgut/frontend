@@ -35,8 +35,8 @@ saveprofile.onclick = function () {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'userID': userID,
-                'Authorization': 'Bearer ' +  localStorage.getItem('Token')
+            //    'userID': userID,
+            //    'Authorization': 'Bearer ' +  localStorage.getItem('Token')
             },
             cache: "force-cache",
             body: JSON.stringify(body)
