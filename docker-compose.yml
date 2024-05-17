@@ -43,7 +43,9 @@ services:
     ports:
       - "8000:8000"
   urlshortener:
-    image: ghcr.io/chatgut/micro-url-shortener-service:main
+    image: erikasignal/url-shortener-service:latest
+    environment:
+      SPRING_DATA_MONGODB_HOST: mongodb
     ports:
       - "8004:8080"
 
